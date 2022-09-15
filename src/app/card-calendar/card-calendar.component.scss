@@ -47,6 +47,9 @@
   min-height: 50.0px;
   flex-shrink: 0;
 }
+.group_1 {
+  flex-grow: 1;
+}
 .column-layout {
   display: flex;
   flex-direction: column;
@@ -76,7 +79,7 @@
   min-height: 50.0px;
   flex-shrink: 0;
 }
-.group_1 {
+.group_2 {
   justify-content: flex-start;
   align-items: stretch;
   align-content: flex-start;
@@ -94,13 +97,20 @@
   min-height: 50px;
 }
 .avatar {
+  --background: none;
   margin: 0.0px;
   padding: 0.0px;
+}
+.image {
+  height: 100%;
 }
 .text-1 {
   margin: 0.0px;
   padding: 0.0px;
   height: max-content;
+}
+.avatar_1 {
+  --background: none;
 }
 .calendar {
   margin: 16px;
