@@ -7,8 +7,7 @@
   align-content: flex-start;
 }
 .navbar {
-  --igx-navbar-background: hsla(var(--igx-primary-300));
-  --igx-navbar-text-color: hsla(var(--igx-surface-500));
+  --igx-navbar-background: hsla(var(--igx-primary-500));
   z-index: 1;
   left: 0;
   top: 0;
@@ -21,10 +20,6 @@
   min-height: 0;
   flex-shrink: 0;
 }
-.nav-drawer-item {
-  min-width: 0;
-  min-height: 0;
-}
 .view-container {
   position: relative;
   min-width: 0;
@@ -32,14 +27,12 @@
   flex-grow: 1;
 }
 .button {
-  color: hsla(var(--igx-surface-500));
+  color: hsla(var(--igx-grays-100));
 }
 .icon {
   font-size: 24px;
   width: 24px;
   height: 24px;
-  width: max-content;
-  height: max-content;
 }
 .row-layout {
   display: flex;

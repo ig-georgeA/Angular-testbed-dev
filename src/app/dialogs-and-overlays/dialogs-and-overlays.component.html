@@ -6,14 +6,14 @@
       </igx-icon>
       <span>Open custom dialog</span>
     </button>
-    <igx-dialog [closeOnOutsideSelect]="true" [closeOnEscape]="true" [igxToggleAction]="customDialog" #customDialog class="custom-dialog">
+    <igx-dialog [closeOnOutsideSelect]="true" [closeOnEscape]="true" [igxToggleAction]="customDialog" #customDialog>
       <igx-dialog-title>
         <h5>
           Confirmation
         </h5>
       </igx-dialog-title>
       <ng-container>
-        <img src="https://cdn.shopify.com/s/files/1/3097/3722/products/HR_143065a_23e36001-852b-4fe7-ab95-49402350ddf4_1666x.jpg?v=1613548614" class="image" />
+        <img src="/assets/SketchParser.png" class="image" />
       </ng-container>
       <igx-dialog-actions>
         <button igxButton="raised" igxRipple [igxToggleAction]="customDialog" class="button_1">
@@ -32,8 +32,8 @@
       </igx-icon>
       <span>Open alert dialog</span>
     </button>
-    <igx-dialog [closeOnOutsideSelect]="true" [closeOnEscape]="true" message="Are you sure you want to do this?" leftButtonLabel="Cancel" rightButtonLabel="OK" (leftButtonSelect)="alert.toggle()" (rightButtonSelect)="alert.toggle()" #alert class="custom-dialog"></igx-dialog>
-    <igx-dialog [closeOnOutsideSelect]="true" [closeOnEscape]="true" message="Are you sure you want to do this?" leftButtonLabel="Cancel" rightButtonLabel="OK" (rightButtonSelect)="dialog.toggle()" (leftButtonSelect)="dialog.toggle()" #dialog class="custom-dialog">
+    <igx-dialog [closeOnOutsideSelect]="true" [closeOnEscape]="true" message="Are you sure you want to do this?" leftButtonLabel="Cancel" rightButtonLabel="OK" (rightButtonSelect)="alert.toggle()" (leftButtonSelect)="alert.toggle()" #alert></igx-dialog>
+    <igx-dialog [closeOnOutsideSelect]="true" [closeOnEscape]="true" message="Are you sure you want to do this?" leftButtonLabel="Cancel" rightButtonLabel="OK" (leftButtonSelect)="dialog.toggle()" (rightButtonSelect)="dialog.toggle()" #dialog>
       <igx-dialog-title>
         <h5>
           Confirmation
@@ -48,7 +48,7 @@
       </igx-icon>
       <span>Open confirmation dialog</span>
     </button>
-    <igx-dialog [closeOnOutsideSelect]="true" [closeOnEscape]="true" message="Are you sure you want to do this?" leftButtonLabel="Cancel" rightButtonLabel="Show me" (rightButtonSelect)="customDialog.toggle()" (leftButtonSelect)="confirm.toggle()" #confirm class="custom-dialog">
+    <igx-dialog [closeOnOutsideSelect]="true" [closeOnEscape]="true" message="Are you sure you want to do this?" leftButtonLabel="Cancel" rightButtonLabel="Show me" (leftButtonSelect)="confirm.toggle()" (rightButtonSelect)="customDialog.toggle()" #confirm>
       <igx-dialog-title>
         <h5>
           Show custom dialog?
@@ -75,7 +75,7 @@
     </button>
   </div>
 </div>
-<igx-snackbar actionText="Action" (clicked)="snackbar.toggle()" #snackbar class="snackbar">
+<igx-snackbar actionText="Dismiss" (clicked)="snackbar.toggle()" #snackbar class="snackbar">
   This is a message
 </igx-snackbar>
 <igx-banner #banner class="banner">

@@ -12,7 +12,7 @@
       </h5>
     </igx-card-header>
     <igx-card-media height="200">
-      <img src="https://www.infragistics.com/angular-demos/assets/images/card/media/ROZES-Under-the-Grave.jpg" />
+      <img src="https://www.infragistics.com/angular-demos/assets/images/card/media/ROZES-Under-the-Grave.jpg" class="image" />
     </igx-card-media>
     <igx-card-actions [reverse]="true" class="actions-content">
       <button igxButton="flat" igxRipple class="button">
@@ -37,12 +37,14 @@
   </igx-card>
   <igx-card class="card-1">
     <igx-card-media height="300px">
-      <img src="https://www.infragistics.com/angular-demos/assets/images/card/media/ROZES-Under-the-Grave.jpg" />
+      <img src="https://www.infragistics.com/angular-demos/assets/images/card/media/ROZES-Under-the-Grave.jpg" class="image" />
     </igx-card-media>
     <igx-card-header>
       <h3 igxCardHeaderTitle>
+        Title goes here
       </h3>
       <h5 igxCardHeaderSubtitle>
+        Subtitle goes here
       </h5>
     </igx-card-header>
     <igx-card-actions class="actions-content">
@@ -67,11 +69,13 @@
     </igx-card-actions>
   </igx-card>
   <igx-card [horizontal]="true" class="card-2">
-    <div>
+    <div class="group_1">
       <igx-card-header>
         <h3 igxCardHeaderTitle>
+          Title goes here
         </h3>
         <h5 igxCardHeaderSubtitle>
+          Subtitle goes here
         </h5>
       </igx-card-header>
       <igx-card-content class="body-content">
@@ -81,7 +85,7 @@
       </igx-card-content>
     </div>
     <igx-card-media width="96">
-      <img src="https://www.infragistics.com/angular-demos/assets/images/card/media/ROZES-Under-the-Grave.jpg" />
+      <img src="https://www.infragistics.com/angular-demos/assets/images/card/media/ROZES-Under-the-Grave.jpg" class="image" />
     </igx-card-media>
   </igx-card>
   <igx-card class="card-11">
@@ -135,6 +139,7 @@
         </div>
       </igx-card-content>
     </div>
+    <igx-divider [vertical]="true"></igx-divider>
     <igx-card-actions [vertical]="true" class="actions-content">
       <button igxButton="icon" igxRipple class="icon-button-2">
         <igx-icon>
@@ -156,18 +161,16 @@
   <igx-card class="card">
     <igx-card-header>
       <div igxCardThumbnail>
-        <igx-avatar icon="people" [roundShape]="true"></igx-avatar>
+        <igx-avatar icon="people" [roundShape]="true" class="avatar_1"></igx-avatar>
       </div>
       <h3 igxCardHeaderTitle>
+        Title goes here
       </h3>
       <h5 igxCardHeaderSubtitle>
+        Subtitle goes here
       </h5>
     </igx-card-header>
-    <igx-card-content class="body-content">
-      <div class="column-layout column-layout-1">
-        <p class="text-1"></p>
-      </div>
-    </igx-card-content>
+    <igx-card-content class="body-content"></igx-card-content>
     <igx-card-actions class="actions-content">
       <button igxButton="flat" igxRipple class="button">
         Button
@@ -190,8 +193,8 @@
     </igx-card-actions>
   </igx-card>
 </div>
-<div class="row-layout group_1">
-  <igx-calendar [weekStart]="0" [value]="date" [hasHeader]="true" class="calendar"></igx-calendar>
-  <igx-calendar [vertical]="true" [weekStart]="0" [hasHeader]="true" class="calendar"></igx-calendar>
-  <igx-calendar [weekStart]="2" [hasHeader]="false" class="calendar"></igx-calendar>
+<div class="row-layout group_2">
+  <igx-calendar [weekStart]="2" [hasHeader]="false" [vertical]="false" class="calendar"></igx-calendar>
+  <igx-calendar [value]="date" class="calendar"></igx-calendar>
+  <igx-calendar [hasHeader]="true" [vertical]="true" class="calendar"></igx-calendar>
 </div>

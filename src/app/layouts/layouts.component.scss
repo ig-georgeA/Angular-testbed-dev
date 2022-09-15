@@ -30,7 +30,9 @@
   justify-content: flex-start;
   align-items: stretch;
   align-content: flex-start;
+  gap: 16px;
   position: relative;
+  padding: 16px;
   min-width: 50px;
   min-height: 50px;
   flex-grow: 1;
@@ -40,9 +42,9 @@
   justify-content: flex-start;
   align-items: stretch;
   align-content: stretch;
+  gap: 16px;
   overflow: hidden;
   position: relative;
-  padding: 16px;
   min-width: 320px;
   min-height: 50px;
   flex-grow: 1;
@@ -52,8 +54,8 @@
   justify-content: flex-start;
   align-items: stretch;
   align-content: flex-start;
+  gap: 16px;
   position: relative;
-  padding: 16px;
   min-width: 500px;
   min-height: 50px;
   flex-grow: 1;
@@ -68,7 +70,6 @@
   align-items: stretch;
   align-content: flex-start;
   position: relative;
-  margin: 0 0 16px;
   padding: 32px;
   min-width: 50px;
   min-height: 50px;
@@ -83,7 +84,6 @@
   align-items: stretch;
   align-content: flex-start;
   position: relative;
-  margin: 0 0 16px;
   padding: 32px;
   min-width: 50px;
   min-height: 50px;
@@ -105,48 +105,30 @@
   flex-shrink: 0;
 }
 .group_7 {
-  background-color: hsla(var(--igx-primary-200));
-  border-color: hsla(var(--igx-grays-900));
-  border-width: 2px;
-  border-style: solid;
-  justify-content: flex-start;
-  align-items: stretch;
-  align-content: flex-start;
-  position: relative;
-  margin: 16px;
-  padding: 32px;
-  min-width: 320px;
-  min-height: 50px;
-  flex-grow: 1;
-  flex-shrink: 0;
-}
-.group_8 {
   background-color: hsla(var(--igx-warn-500));
   justify-content: flex-start;
   align-items: stretch;
   align-content: flex-start;
   position: relative;
-  margin: 16px;
   padding: 32px;
   min-width: 320px;
   min-height: 50px;
   flex-grow: 1;
   flex-basis: 0;
 }
-.group_9 {
+.group_8 {
   background-color: hsla(var(--igx-grays-300));
   justify-content: center;
   align-items: center;
   align-content: flex-start;
   position: relative;
   margin: 16px;
-  padding: 32px;
   min-width: 320px;
   min-height: 50px;
   flex-grow: 1;
   flex-shrink: 0;
 }
-.group_10 {
+.group_9 {
   background-color: hsla(var(--igx-grays-400));
   justify-content: flex-start;
   align-items: stretch;

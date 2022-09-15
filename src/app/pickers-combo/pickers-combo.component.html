@@ -85,21 +85,25 @@
       <label igxLabel>Names</label>
     </igx-combo>
     <igx-combo placeholder="Box-style combo + disabled" [disabled]="true" [data]="northwindEmployees" valueKey="employeeID" displayKey="firstName" [filterable]="true" [autoFocusSearch]="true" class="user-input"></igx-combo>
+    <button igxButton="raised" igxRipple [igxToggleAction]="dropdown" class="user-input">
+      <span>Dropdown</span>
+      <igx-icon>
+        keyboard_arrow_down
+      </igx-icon>
+    </button>
+    <igx-drop-down #dropdown class="dropdown">
+      <igx-drop-down-item>
+        Option
+      </igx-drop-down-item>
+      <igx-drop-down-item>
+        Option
+      </igx-drop-down-item>
+      <igx-drop-down-item>
+        Option
+      </igx-drop-down-item>
+      <igx-drop-down-item>
+        Option
+      </igx-drop-down-item>
+    </igx-drop-down>
   </div>
-</div>
-<div class="row-layout group_2">
-  <button igxButton="raised" igxRipple [igxToggleAction]="dropdown" class="button">
-    Open dropdown
-  </button>
-  <igx-drop-down #dropdown class="dropdown">
-    <igx-drop-down-item>
-      Option
-    </igx-drop-down-item>
-    <igx-drop-down-item>
-      Option
-    </igx-drop-down-item>
-    <igx-drop-down-item>
-      Option
-    </igx-drop-down-item>
-  </igx-drop-down>
 </div>

@@ -27,7 +27,7 @@
   flex-shrink: 0;
 }
 .group_1 {
-  background-color: hsla(var(--igx-warn-500));
+  background-color: hsla(var(--igx-grays-400));
   border-color: hsla(var(--igx-grays-900));
   border-width: 3px;
   border-style: solid;
@@ -63,7 +63,7 @@
   flex-shrink: 0;
 }
 .group_3 {
-  background-color: hsla(var(--igx-error-500));
+  background-color: hsla(var(--igx-grays-800));
   border-color: hsla(var(--igx-grays-900));
   border-width: 3px;
   border-style: solid;
@@ -123,6 +123,13 @@
   flex-shrink: 0;
 }
 .h5_1 {
+  color: hsla(var(--igx-surface-500));
+  width: min-content;
+  height: max-content;
+  min-width: min-content;
+  flex-shrink: 0;
+}
+.h5_2 {
   color: hsla(var(--igx-surface-500));
   height: max-content;
   min-width: min-content;

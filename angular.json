@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-testbed": {
+    "component-testbed": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-testbed",
+            "outputPath": "dist/component-testbed",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -74,10 +74,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-testbed:build:production"
+              "browserTarget": "component-testbed:build:production"
             },
             "development": {
-              "browserTarget": "angular-testbed:build:development"
+              "browserTarget": "component-testbed:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -85,7 +85,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-testbed:build"
+            "browserTarget": "component-testbed:build"
           }
         },
         "test": {
@@ -120,8 +120,8 @@
       }
     }
   },
-  "defaultProject": "angular-testbed",
+  "defaultProject": "component-testbed",
   "cli": {
-    "defaultCollection": "@angular-eslint/schematics"
+    "schematicCollections": ["@angular-eslint/schematics"]
   }
 }

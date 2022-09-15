@@ -1,44 +1,26 @@
 <div class="row-layout group">
-  <igx-card type="outlined" *ngFor="let item of northwindEmployees" class="card">
-    <igx-card-header>
-      <div igxCardThumbnail>
-        <igx-avatar [src]="item.avatarUrl" size="medium" [roundShape]="true" class="avatar"></igx-avatar>
-      </div>
-      <h3 igxCardHeaderTitle>
-        {{ item.lastName }}
-      </h3>
-      <h5 igxCardHeaderSubtitle>
-        {{ item.title }}
-      </h5>
-    </igx-card-header>
-    <igx-card-actions [reverse]="true" class="actions-content">
-      <button igxButton="flat" igxRipple class="button">
-        Contact me
-      </button>
-      <button igxButton="icon" igxRipple>
-        <igx-icon>
-          favorite
-        </igx-icon>
-      </button>
-      <button igxButton="icon" igxRipple>
-        <igx-icon>
-          bookmark
-        </igx-icon>
-      </button>
-      <button igxButton="icon" igxRipple>
-        <igx-icon>
-          share
-        </igx-icon>
-      </button>
-    </igx-card-actions>
+  <igx-card type="outlined" [horizontal]="true" *ngFor="let item of northwindEmployees" class="card">
+    <div class="group_1">
+      <igx-card-header>
+        <h3 igxCardHeaderTitle>
+          {{ item.lastName }}
+        </h3>
+        <h5 igxCardHeaderSubtitle>
+          {{ item.title }}
+        </h5>
+      </igx-card-header>
+    </div>
+    <igx-card-media width="100px">
+      <img [src]="item.avatarUrl" class="image" />
+    </igx-card-media>
   </igx-card>
 </div>
-<div class="row-layout group_1">
-  <div class="column-layout group_2">
+<div class="row-layout group_2">
+  <div class="column-layout group_3">
     <igx-list class="list">
-      <igx-list-item [isHeader]="false" *ngFor="let item of northwindEmployees" class="list-item">
+      <igx-list-item [isHeader]="false" *ngFor="let item of northwindEmployees">
         <span igxListThumbnail>
-          <igx-avatar [src]="item.avatarUrl" size="medium"></igx-avatar>
+          <igx-avatar [src]="item.avatarUrl" size="medium" class="avatar"></igx-avatar>
         </span>
         <span igxListLineTitle>{{ item.lastName }}</span>
         <span igxListLineSubTitle>{{ item.title }}</span>
@@ -50,17 +32,17 @@
       </igx-list-item>
     </igx-list>
   </div>
-  <div class="column-layout group_2">
+  <div class="column-layout group_3">
     <igx-list class="list">
-      <igx-list-item [isHeader]="false" *ngFor="let item of northwindEmployees" class="list-item">
+      <igx-list-item [isHeader]="false" *ngFor="let item of northwindEmployees">
         <span igxListThumbnail>
-          <igx-avatar [src]="item.avatarUrl" size="large" [roundShape]="true"></igx-avatar>
+          <igx-avatar [src]="item.avatarUrl" size="large" [roundShape]="true" class="avatar"></igx-avatar>
         </span>
         <span igxListLineTitle>{{ item.lastName }}</span>
         <span igxListLineSubTitle>{{ item.title }}</span>
         <span igxListLine>
-          <div class="row-layout group_3">
-            <div class="column-layout group_4">
+          <div class="row-layout group_4">
+            <div class="column-layout group_5">
               <p class="igx-typography__caption text">
                 Birthday
               </p>
@@ -68,7 +50,7 @@
                 {{ item.birthDate }}
               </p>
             </div>
-            <div class="column-layout group_4">
+            <div class="column-layout group_5">
               <p class="igx-typography__caption text">
                 Country
               </p>
