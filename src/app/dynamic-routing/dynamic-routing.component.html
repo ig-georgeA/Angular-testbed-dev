@@ -1,0 +1,17 @@
+<igx-grid [data]="iGNorthwindAPIv2CustomerDto" primaryKey="customerId" displayDensity="cosy" [allowFiltering]="true" filterMode="excelStyleFilter" class="grid">
+  <igx-column field="customerId" dataType="string" header="customerId" [sortable]="true" [selectable]="false">
+    <ng-template igxCell let-cell="cell">
+      <a target="_blank" [routerLink]="['/route-details', cell.value]" class="ig-typography__body-2 hyperlink">
+        {{ cell.value }}
+      </a>
+    </ng-template>
+  </igx-column>
+  <igx-column field="companyName" dataType="string" header="companyName" [sortable]="true" [selectable]="false"></igx-column>
+  <igx-column field="contactName" dataType="string" header="contactName" [sortable]="true" [selectable]="false"></igx-column>
+  <igx-column field="contactTitle" dataType="string" header="contactTitle" [sortable]="true" [selectable]="false"></igx-column>
+  <igx-column field="address.street" dataType="string" header="address street" [sortable]="true" [selectable]="false"></igx-column>
+  <igx-column field="address.city" dataType="string" header="address city" [sortable]="true" [selectable]="false"></igx-column>
+  <igx-column field="address.postalCode" dataType="string" header="address postalCode" [sortable]="true" [selectable]="false"></igx-column>
+  <igx-column field="address.country" dataType="string" header="address country" [sortable]="true" [selectable]="false"></igx-column>
+  <igx-column field="address.phone" dataType="string" header="address phone" [sortable]="true" [selectable]="false"></igx-column>
+</igx-grid>

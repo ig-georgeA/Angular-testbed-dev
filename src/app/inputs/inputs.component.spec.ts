@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
-import { IgxInputGroupModule, IgxIconModule, IgxDateTimeEditorModule, IgxDatePickerModule, IgxChipsModule, IgxSliderModule, IgxButtonModule, IgxRippleModule, IgxButtonGroupModule, IgxSwitchModule, IgxCheckboxModule, IgxRadioModule, IgxAvatarModule } from 'igniteui-angular';
+import { IgxInputGroupModule, IgxIconModule, IgxDateTimeEditorModule, IgxDatePickerModule, IgxChipsModule, IgxAvatarModule, IgxSliderModule, IgcFormsModule, IgxButtonModule, IgxRippleModule, IgxBadgeModule, IgxButtonGroupModule, IgxSwitchModule, IgxCheckboxModule, IgxRadioModule } from '@infragistics/igniteui-angular';
 import { InputsComponent } from './inputs.component';
 
 describe('InputsComponent', () => {
@@ -12,7 +12,7 @@ describe('InputsComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ InputsComponent ],
-      imports: [ NoopAnimationsModule, FormsModule, IgxInputGroupModule, IgxIconModule, IgxDateTimeEditorModule, IgxDatePickerModule, IgxChipsModule, IgxSliderModule, IgxButtonModule, IgxRippleModule, IgxButtonGroupModule, IgxSwitchModule, IgxCheckboxModule, IgxRadioModule, IgxAvatarModule ]
+      imports: [ NoopAnimationsModule, FormsModule, IgxInputGroupModule, IgxIconModule, IgxDateTimeEditorModule, IgxDatePickerModule, IgxChipsModule, IgxAvatarModule, IgxSliderModule, IgcFormsModule, IgxButtonModule, IgxRippleModule, IgxBadgeModule, IgxButtonGroupModule, IgxSwitchModule, IgxCheckboxModule, IgxRadioModule ]
     })
     .compileComponents();
   });

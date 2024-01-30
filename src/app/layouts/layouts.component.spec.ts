@@ -8,12 +8,10 @@ describe('LayoutsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LayoutsComponent ]
+      declarations: [LayoutsComponent]
     })
     .compileComponents();
-  });
-
-  beforeEach(() => {
+    
     fixture = TestBed.createComponent(LayoutsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

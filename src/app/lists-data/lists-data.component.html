@@ -9,20 +9,100 @@
           {{ item.title }}
         </h5>
       </igx-card-header>
+      <igx-card-actions class="actions-content">
+        <ng-container igxStart>
+          <button igxButton="flat" igxRipple routerLink="/layouts" class="button">
+            Details
+          </button>
+        </ng-container>
+      </igx-card-actions>
     </div>
-    <igx-card-media width="100px">
+    <igx-card-media width="100px" class="media-content">
       <img [src]="item.avatarUrl" class="image" />
     </igx-card-media>
   </igx-card>
 </div>
 <div class="row-layout group_2">
+  <igx-list class="list">
+    <igx-list-item [isHeader]="false">
+      <span igxListThumbnail>
+        <igx-avatar shape="circle" class="avatar">
+          <igx-icon>
+            home
+          </igx-icon>
+        </igx-avatar>
+      </span>
+      <span igxListLineTitle>Home</span>
+      <span igxListLineSubTitle>Subtitle...</span>
+    </igx-list-item>
+    <igx-list-item [isHeader]="false">
+      <span igxListThumbnail>
+        <igx-avatar shape="circle" class="avatar">
+          <igx-icon>
+            business
+          </igx-icon>
+        </igx-avatar>
+      </span>
+      <span igxListLineTitle>Accounts</span>
+    </igx-list-item>
+    <igx-list-item [isHeader]="false">
+      <span igxListThumbnail>
+        <igx-avatar shape="circle" class="avatar">
+          <igx-icon>
+            person_outline
+          </igx-icon>
+        </igx-avatar>
+      </span>
+      <span igxListLineTitle>Contacts</span>
+    </igx-list-item>
+    <igx-list-item [isHeader]="false">
+      <span igxListThumbnail>
+        <igx-avatar shape="circle" class="avatar">
+          <igx-icon>
+            inbox
+          </igx-icon>
+        </igx-avatar>
+      </span>
+      <span igxListLineTitle>Contracts</span>
+    </igx-list-item>
+    <igx-list-item [isHeader]="false">
+      <span igxListThumbnail>
+        <igx-avatar shape="circle" class="avatar">
+          <igx-icon>
+            bar_chart
+          </igx-icon>
+        </igx-avatar>
+      </span>
+      <span igxListLineTitle>Reports</span>
+    </igx-list-item>
+    <igx-list-item [isHeader]="false">
+      <span igxListThumbnail>
+        <igx-avatar shape="circle" class="avatar">
+          <igx-icon>
+            calendar_today
+          </igx-icon>
+        </igx-avatar>
+      </span>
+      <span igxListLineTitle>Calendar</span>
+    </igx-list-item>
+    <igx-list-item [isHeader]="false">
+      <span igxListThumbnail>
+        <igx-avatar shape="circle" class="avatar">
+          <igx-icon>
+            assignment_turned_in
+          </igx-icon>
+        </igx-avatar>
+      </span>
+      <span igxListLineTitle>Tasks</span>
+    </igx-list-item>
+  </igx-list>
   <div class="column-layout group_3">
-    <igx-list class="list">
+    <igx-list class="list_1">
       <igx-list-item [isHeader]="false" *ngFor="let item of northwindEmployees">
         <span igxListThumbnail>
-          <igx-avatar [src]="item.avatarUrl" size="medium" class="avatar"></igx-avatar>
+          <igx-avatar [src]="item.avatarUrl" shape="circle" class="avatar"></igx-avatar>
         </span>
-        <span igxListLineTitle>{{ item.lastName }}</span>
+        <span igxListLineTitle>Title goes here</span>
         <span igxListLineSubTitle>{{ item.title }}</span>
         <span igxListAction>
           <igx-icon class="icon">
@@ -33,29 +113,29 @@
     </igx-list>
   </div>
   <div class="column-layout group_3">
-    <igx-list class="list">
+    <igx-list class="list_1">
       <igx-list-item [isHeader]="false" *ngFor="let item of northwindEmployees">
         <span igxListThumbnail>
-          <igx-avatar [src]="item.avatarUrl" size="large" [roundShape]="true" class="avatar"></igx-avatar>
+          <igx-avatar [src]="item.avatarUrl" size="large" class="avatar"></igx-avatar>
         </span>
         <span igxListLineTitle>{{ item.lastName }}</span>
         <span igxListLineSubTitle>{{ item.title }}</span>
         <span igxListLine>
           <div class="row-layout group_4">
             <div class="column-layout group_5">
-              <p class="igx-typography__caption text">
+              <p class="ig-typography__caption text">
                 Birthday
               </p>
-              <p class="igx-typography__caption text_1">
+              <p class="ig-typography__caption text_1">
                 {{ item.birthDate }}
               </p>
             </div>
             <div class="column-layout group_5">
-              <p class="igx-typography__caption text">
+              <p class="ig-typography__caption text">
                 Country
               </p>
-              <p class="igx-typography__caption text_1">
-                {{ item.address.country }}
+              <p class="ig-typography__caption text_1">
+                {{ item.address?.country }}
               </p>
             </div>
           </div>

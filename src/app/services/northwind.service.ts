@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { Northwind } from './northwind';
+import { Northwind } from '../static-data/northwind';
 
 @Injectable({
   providedIn: 'root'

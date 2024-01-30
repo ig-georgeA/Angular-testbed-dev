@@ -1,9 +1,6 @@
 <div class="row-layout group">
   <igx-card class="card">
     <igx-card-header>
-      <div igxCardThumbnail>
-        <igx-avatar [roundShape]="true" class="avatar"></igx-avatar>
-      </div>
       <h3 igxCardHeaderTitle>
         Rozes
       </h3>
@@ -14,68 +11,76 @@
     <igx-card-media height="200">
       <img src="https://www.infragistics.com/angular-demos/assets/images/card/media/ROZES-Under-the-Grave.jpg" class="image" />
     </igx-card-media>
-    <igx-card-actions [reverse]="true" class="actions-content">
-      <button igxButton="flat" igxRipple class="button">
-        Play
-      </button>
-      <button igxButton="icon" igxRipple class="icon-button-2">
-        <igx-icon>
-          favorite
-        </igx-icon>
-      </button>
-      <button igxButton="icon" igxRipple class="icon-button-2">
-        <igx-icon>
-          bookmark
-        </igx-icon>
-      </button>
-      <button igxButton="icon" igxRipple class="icon-button-2">
-        <igx-icon>
-          share
-        </igx-icon>
-      </button>
+    <igx-card-actions class="actions-content">
+      <ng-container igxStart>
+        <button igxButton="icon" igxRipple class="icon-button-2">
+          <igx-icon>
+            favorite
+          </igx-icon>
+        </button>
+        <button igxButton="icon" igxRipple class="icon-button-2">
+          <igx-icon>
+            bookmark
+          </igx-icon>
+        </button>
+        <button igxButton="icon" igxRipple class="icon-button-2">
+          <igx-icon>
+            share
+          </igx-icon>
+        </button>
+      </ng-container>
+      <ng-container igxEnd>
+        <button igxButton="flat" igxRipple class="button">
+          Play
+        </button>
+      </ng-container>
     </igx-card-actions>
   </igx-card>
   <igx-card class="card-1">
-    <igx-card-media height="300px">
+    <igx-card-media height="300px" class="media-content">
       <img src="https://www.infragistics.com/angular-demos/assets/images/card/media/ROZES-Under-the-Grave.jpg" class="image" />
     </igx-card-media>
     <igx-card-header>
       <h3 igxCardHeaderTitle>
-        Title goes here
+        Title goes here...
       </h3>
       <h5 igxCardHeaderSubtitle>
-        Subtitle goes here
+        Subtitle goes here...
       </h5>
     </igx-card-header>
     <igx-card-actions class="actions-content">
-      <button igxButton="flat" igxRipple class="button">
-        Button
-      </button>
-      <button igxButton="icon" igxRipple class="icon-button-2">
-        <igx-icon>
-          favorite
-        </igx-icon>
-      </button>
-      <button igxButton="icon" igxRipple class="icon-button-2">
-        <igx-icon>
-          bookmark
-        </igx-icon>
-      </button>
-      <button igxButton="icon" igxRipple class="icon-button-2">
-        <igx-icon>
-          share
-        </igx-icon>
-      </button>
+      <ng-container igxStart>
+        <button igxButton="flat" igxRipple class="button">
+          Button
+        </button>
+      </ng-container>
+      <ng-container igxEnd>
+        <button igxButton="icon" igxRipple class="icon-button-2">
+          <igx-icon>
+            favorite
+          </igx-icon>
+        </button>
+        <button igxButton="icon" igxRipple class="icon-button-2">
+          <igx-icon>
+            bookmark
+          </igx-icon>
+        </button>
+        <button igxButton="icon" igxRipple class="icon-button-2">
+          <igx-icon>
+            share
+          </igx-icon>
+        </button>
+      </ng-container>
     </igx-card-actions>
   </igx-card>
   <igx-card [horizontal]="true" class="card-2">
     <div class="group_1">
       <igx-card-header>
         <h3 igxCardHeaderTitle>
-          Title goes here
+          Title goes here...
         </h3>
         <h5 igxCardHeaderSubtitle>
-          Subtitle goes here
+          Subtitle goes here...
         </h5>
       </igx-card-header>
       <igx-card-content class="body-content">
@@ -97,32 +102,34 @@
         Under the grave (2016)
       </h5>
     </igx-card-header>
-    <igx-card-actions [reverse]="true" class="actions-content">
-      <button igxButton="flat" igxRipple class="button">
-        Play
-      </button>
-      <button igxButton="icon" igxRipple class="icon-button-2">
-        <igx-icon>
-          favorite
-        </igx-icon>
-      </button>
-      <button igxButton="flat" igxRipple class="button">
-        Button
-      </button>
-      <button igxButton="icon" igxRipple class="icon-button-2">
-        <igx-icon>
-          bookmark
-        </igx-icon>
-      </button>
+    <igx-card-actions class="actions-content">
+      <ng-container igxStart>
+        <button igxButton="icon" igxRipple class="icon-button-2">
+          <igx-icon>
+            favorite
+          </igx-icon>
+        </button>
+        <button igxButton="icon" igxRipple class="icon-button-2">
+          <igx-icon>
+            bookmark
+          </igx-icon>
+        </button>
+      </ng-container>
+      <ng-container igxEnd>
+        <button igxButton="flat" igxRipple class="button">
+          Play
+        </button>
+        <button igxButton="flat" igxRipple class="button">
+          Button
+        </button>
+      </ng-container>
     </igx-card-actions>
   </igx-card>
   <igx-card [horizontal]="true" class="card-3">
-    <div>
+    <div class="group_2">
       <div class="row-layout">
         <igx-card-header>
-          <div igxCardThumbnail>
-            <igx-avatar src="https://www.infragistics.com/angular-demos/assets/images/card/media/ROZES-Under-the-Grave.jpg" size="medium" class="avatar"></igx-avatar>
-          </div>
+          <div igxCardThumbnail></div>
           <h3 igxCardHeaderTitle>
             Rozes
           </h3>
@@ -133,68 +140,77 @@
       </div>
       <igx-card-content class="body-content">
         <div class="column-layout column-layout-1">
-          <p class="igx-typography__body-2 text-1">
-            As I have always said: I write what’s real and what’s true, even if it means throwing myself under the bus
+          <p class="ig-typography__body-2 text-1">
+            As I have always said: I write what’s real and what’s true, even if it means throwing myself under the bus....
           </p>
         </div>
       </igx-card-content>
     </div>
     <igx-divider [vertical]="true"></igx-divider>
-    <igx-card-actions [vertical]="true" class="actions-content">
-      <button igxButton="icon" igxRipple class="icon-button-2">
-        <igx-icon>
-          favorite
-        </igx-icon>
-      </button>
-      <button igxButton="icon" igxRipple class="icon-button-2">
-        <igx-icon>
-          bookmark
-        </igx-icon>
-      </button>
-      <button igxButton="icon" igxRipple class="icon-button-2">
-        <igx-icon>
-          share
-        </igx-icon>
-      </button>
+    <igx-card-actions [vertical]="true" class="igx-card-actions--justify actions-content_1">
+      <ng-container igxEnd>
+        <button igxButton="icon" igxRipple class="icon-button-2">
+          <igx-icon>
+            favorite
+          </igx-icon>
+        </button>
+        <button igxButton="icon" igxRipple class="icon-button-2">
+          <igx-icon>
+            bookmark
+          </igx-icon>
+        </button>
+        <button igxButton="icon" igxRipple class="icon-button-2">
+          <igx-icon>
+            share
+          </igx-icon>
+        </button>
+      </ng-container>
     </igx-card-actions>
   </igx-card>
   <igx-card class="card">
     <igx-card-header>
       <div igxCardThumbnail>
-        <igx-avatar icon="people" [roundShape]="true" class="avatar_1"></igx-avatar>
+        <igx-avatar shape="circle" class="avatar">
+          <igx-icon>
+            people
+          </igx-icon>
+        </igx-avatar>
       </div>
       <h3 igxCardHeaderTitle>
-        Title goes here
+        Title goes here...
       </h3>
       <h5 igxCardHeaderSubtitle>
-        Subtitle goes here
+        Subtitle goes here...
       </h5>
     </igx-card-header>
-    <igx-card-content class="body-content"></igx-card-content>
     <igx-card-actions class="actions-content">
-      <button igxButton="flat" igxRipple class="button">
-        Button
-      </button>
-      <button igxButton="icon" igxRipple class="icon-button-2">
-        <igx-icon>
-          adb
-        </igx-icon>
-      </button>
-      <button igxButton="icon" igxRipple class="icon-button-2">
-        <igx-icon>
-          bookmark
-        </igx-icon>
-      </button>
-      <button igxButton="icon" igxRipple class="icon-button-2">
-        <igx-icon>
-          share
-        </igx-icon>
-      </button>
+      <ng-container igxStart>
+        <button igxButton="flat" igxRipple class="button">
+          Button
+        </button>
+      </ng-container>
+      <ng-container igxEnd>
+        <button igxButton="icon" igxRipple class="icon-button-2">
+          <igx-icon>
+            adb
+          </igx-icon>
+        </button>
+        <button igxButton="icon" igxRipple class="icon-button-2">
+          <igx-icon>
+            bookmark
+          </igx-icon>
+        </button>
+        <button igxButton="icon" igxRipple class="icon-button-2">
+          <igx-icon>
+            share
+          </igx-icon>
+        </button>
+      </ng-container>
     </igx-card-actions>
   </igx-card>
 </div>
-<div class="row-layout group_2">
+<div class="row-layout group_3">
   <igx-calendar [weekStart]="2" [hasHeader]="false" [vertical]="false" class="calendar"></igx-calendar>
-  <igx-calendar [value]="date" class="calendar"></igx-calendar>
-  <igx-calendar [hasHeader]="true" [vertical]="true" class="calendar"></igx-calendar>
+  <igx-calendar [(ngModel)]="value" [hasHeader]="true" [vertical]="false" class="calendar"></igx-calendar>
+  <igx-calendar [showWeekNumbers]="true" [monthsViewNumber]="2" [hasHeader]="true" [vertical]="false" class="calendar"></igx-calendar>
 </div>
