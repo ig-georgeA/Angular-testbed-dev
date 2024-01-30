@@ -1,0 +1,261 @@
+<div class="column-layout group">
+  <igx-card type="outlined" class="card">
+    <igx-card-header>
+      <div igxCardThumbnail>
+        <igx-avatar src="/assets/Avatar9.png" size="medium" shape="circle" class="avatar"></igx-avatar>
+      </div>
+      <h3 igxCardHeaderTitle>
+        FirstName LastName
+      </h3>
+      <h5 igxCardHeaderSubtitle>
+        myemail@email.com
+      </h5>
+    </igx-card-header>
+    <igx-card-actions class="actions-content">
+      <ng-container igxEnd>
+        <button igxButton="flat" igxRipple class="button">
+          <igx-icon>
+            exit_to_app
+          </igx-icon>
+          <span>Sign out</span>
+        </button>
+      </ng-container>
+    </igx-card-actions>
+  </igx-card>
+  <igx-expansion-panel [collapsed]="false" class="expansion-panel">
+    <igx-expansion-panel-body>
+      <igx-list class="list">
+        <igx-list-item [isHeader]="false">
+          <span igxListThumbnail>
+            <igx-avatar shape="circle" class="avatar">
+              <igx-icon>
+                person
+              </igx-icon>
+            </igx-avatar>
+          </span>
+          <span igxListLineTitle>User profile</span>
+        </igx-list-item>
+        <igx-list-item [isHeader]="false">
+          <span igxListThumbnail>
+            <igx-avatar shape="circle" class="avatar">
+              <igx-icon>
+                assessment
+              </igx-icon>
+            </igx-avatar>
+          </span>
+          <span igxListLineTitle>Analytics</span>
+        </igx-list-item>
+        <igx-list-item [isHeader]="false">
+          <span igxListThumbnail>
+            <igx-avatar shape="circle" class="avatar">
+              <igx-icon>
+                book
+              </igx-icon>
+            </igx-avatar>
+          </span>
+          <span igxListLineTitle>Favorites</span>
+        </igx-list-item>
+        <igx-list-item [isHeader]="false">
+          <span igxListThumbnail>
+            <igx-avatar shape="circle" class="avatar">
+              <igx-icon>
+                people
+              </igx-icon>
+            </igx-avatar>
+          </span>
+          <span igxListLineTitle>Shared with others</span>
+        </igx-list-item>
+      </igx-list>
+    </igx-expansion-panel-body>
+    <igx-expansion-panel-header>
+      <igx-expansion-panel-title>Account</igx-expansion-panel-title>
+    </igx-expansion-panel-header>
+  </igx-expansion-panel>
+  <igx-expansion-panel class="expansion-panel">
+    <igx-expansion-panel-body>
+      <igx-list class="list">
+        <igx-list-item [isHeader]="false">
+          <span igxListThumbnail>
+            <igx-avatar shape="circle" class="avatar">
+              <igx-icon>
+                palette
+              </igx-icon>
+            </igx-avatar>
+          </span>
+          <span igxListLineTitle>Theme</span>
+        </igx-list-item>
+        <igx-list-item [isHeader]="false">
+          <span igxListThumbnail>
+            <igx-avatar shape="circle" class="avatar">
+              <igx-icon>
+                vpn_key
+              </igx-icon>
+            </igx-avatar>
+          </span>
+          <span igxListLineTitle>Change password</span>
+        </igx-list-item>
+        <igx-list-item [isHeader]="false">
+          <span igxListThumbnail>
+            <igx-avatar shape="circle" class="avatar">
+              <igx-icon>
+                call_split
+              </igx-icon>
+            </igx-avatar>
+          </span>
+          <span igxListLineTitle>Mail rules</span>
+        </igx-list-item>
+        <igx-list-item [isHeader]="false">
+          <span igxListThumbnail>
+            <igx-avatar shape="circle" class="avatar">
+              <igx-icon>
+                forum
+              </igx-icon>
+            </igx-avatar>
+          </span>
+          <span igxListLineTitle>Chat preferences</span>
+        </igx-list-item>
+      </igx-list>
+    </igx-expansion-panel-body>
+    <igx-expansion-panel-header>
+      <igx-expansion-panel-title>Preferences</igx-expansion-panel-title>
+    </igx-expansion-panel-header>
+  </igx-expansion-panel>
+  <igx-expansion-panel class="expansion-panel">
+    <igx-expansion-panel-body>
+      <igx-list class="list">
+        <igx-list-item [isHeader]="false">
+          <span igxListThumbnail>
+            <igx-avatar shape="circle" class="avatar">
+              <igx-icon>
+                folder
+              </igx-icon>
+            </igx-avatar>
+          </span>
+          <span igxListLineTitle>Title goes here</span>
+        </igx-list-item>
+        <igx-list-item [isHeader]="false">
+          <span igxListThumbnail>
+            <igx-avatar shape="circle" class="avatar">
+              <igx-icon>
+                folder
+              </igx-icon>
+            </igx-avatar>
+          </span>
+          <span igxListLineTitle>Title goes here</span>
+        </igx-list-item>
+        <igx-list-item [isHeader]="false">
+          <span igxListThumbnail>
+            <igx-avatar shape="circle" class="avatar">
+              <igx-icon>
+                folder
+              </igx-icon>
+            </igx-avatar>
+          </span>
+          <span igxListLineTitle>Title goes here</span>
+        </igx-list-item>
+      </igx-list>
+    </igx-expansion-panel-body>
+    <igx-expansion-panel-header>
+      <igx-expansion-panel-title>Panel 3</igx-expansion-panel-title>
+    </igx-expansion-panel-header>
+  </igx-expansion-panel>
+  <igx-tree class="tree">
+    <igx-tree-node>
+      <igx-tree-node>
+        Figma
+      </igx-tree-node>
+      <igx-tree-node>
+        Adobe XD
+      </igx-tree-node>
+      <igx-tree-node>
+        Sketch
+      </igx-tree-node>
+      Design
+    </igx-tree-node>
+    <igx-tree-node>
+      <igx-tree-node>
+        Angular
+      </igx-tree-node>
+      <igx-tree-node>
+        Blazor
+      </igx-tree-node>
+      <igx-tree-node>
+        Web components
+      </igx-tree-node>
+      Development
+    </igx-tree-node>
+  </igx-tree>
+</div>
+<div class="row-layout row-layout-1">
+  <div class="column-layout column-layout-1">
+    <h5 class="title-1">
+      Sign in
+    </h5>
+    <igx-input-group type="box" class="user-input">
+      <input type="text" igxInput />
+      <label igxLabel>Username</label>
+    </igx-input-group>
+    <igx-input-group type="box" class="user-input_1">
+      <input type="password" igxInput />
+      <label igxLabel>Password</label>
+    </igx-input-group>
+    <div class="row-layout row-layout-2">
+      <igx-checkbox labelPosition="after" class="checkbox-1">
+        Remember me
+      </igx-checkbox>
+      <a target="_blank" class="ig-typography__body-1 hyperlink">
+        Forgot password?
+      </a>
+    </div>
+    <button igxButton="raised" igxRipple class="user-input">
+      Sign in
+    </button>
+    <button igxButton="outlined" igxRipple class="user-input_1">
+      Create a new account
+    </button>
+    <p class="ig-typography__caption text-2">
+      By signing in, you are agreeing to our terms of use and privacy policy
+    </p>
+  </div>
+</div>
+<div class="column-layout group_1">
+  <div class="column-layout group_2">
+    <igx-tree class="tree_1">
+      <igx-tree-node *ngFor="let item of nestedDataRepeatNestedData?.components!">
+        <igx-tree-node *ngFor="let item1 of item.propertiesPanel">
+          <igx-tree-node *ngFor="let item2 of item1.content">
+            {{ item2.name }}
+          </igx-tree-node>
+          {{ item1.name }}
+        </igx-tree-node>
+        {{ item.name }}
+      </igx-tree-node>
+    </igx-tree>
+  </div>
+  <igx-accordion [singleBranchExpand]="true" class="accordion">
+    <igx-expansion-panel>
+      <igx-expansion-panel-body>
+        <img src="/assets/SketchParser.png" class="image" />
+      </igx-expansion-panel-body>
+      <igx-expansion-panel-header>
+        <igx-expansion-panel-title>Accordion 1</igx-expansion-panel-title>
+      </igx-expansion-panel-header>
+    </igx-expansion-panel>
+    <igx-expansion-panel>
+      <igx-expansion-panel-body>
+        <img src="/assets/Image.svg" class="image" />
+      </igx-expansion-panel-body>
+      <igx-expansion-panel-header>
+        <igx-expansion-panel-title>Accordion 2</igx-expansion-panel-title>
+      </igx-expansion-panel-header>
+    </igx-expansion-panel>
+    <igx-expansion-panel>
+      <igx-expansion-panel-body>
+        <img src="/assets/BrandGuidelines.png" class="image" />
+      </igx-expansion-panel-body>
+      <igx-expansion-panel-header>
+        <igx-expansion-panel-title>Accordion 3</igx-expansion-panel-title>
+      </igx-expansion-panel-header>
+    </igx-expansion-panel>
+  </igx-accordion>
+</div>

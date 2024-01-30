@@ -5,5 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './type-scale.component.html',
   styleUrls: ['./type-scale.component.scss']
 })
-export class TypeScaleComponent {
-}
+export class TypeScaleComponent {}

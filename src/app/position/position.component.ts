@@ -5,5 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './position.component.html',
   styleUrls: ['./position.component.scss']
 })
-export class PositionComponent {
-}
+export class PositionComponent {}

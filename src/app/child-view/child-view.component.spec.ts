@@ -1,8 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
-import { IgxListModule, IgxAvatarModule, IgxIconModule } from 'igniteui-angular';
+import { IgxGridModule } from '@infragistics/igniteui-angular';
 import { ChildViewComponent } from './child-view.component';
 
 describe('ChildViewComponent', () => {
@@ -12,7 +13,7 @@ describe('ChildViewComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ ChildViewComponent ],
-      imports: [ NoopAnimationsModule, FormsModule, IgxListModule, IgxAvatarModule, IgxIconModule ]
+      imports: [ NoopAnimationsModule, FormsModule, HttpClientTestingModule, IgxGridModule ]
     })
     .compileComponents();
   });

@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./card-calendar.component.scss']
 })
 export class CardCalendarComponent {
-  public date = new Date('2022-01-13T00:00');
+  public value: Date = new Date('2022-01-13T00:00');
 }

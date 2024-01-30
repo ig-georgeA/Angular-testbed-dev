@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { Financial } from './financial';
+import { Financial } from '../static-data/financial';
 
 @Injectable({
   providedIn: 'root'
